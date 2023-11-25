@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <section>
+        <div class="shop">
+            <div class="shop_item" id="0">
+                <div class="image"></div>
+                <p id="title">Назва товару</p>
+                <div class="description">
+                    <p id="price">250 грн</p>
+                    <button>В корзину</button>
+                </div>
+            </div>
+            <div class="shop_item" id="1">
+                <div class="image"></div>
+                <p id="title">Назва товару</p>
+                <div class="description">
+                    <p id="price">250 грн</p>
+                    <button>В корзину</button>
+                </div>
+            </div>
+            <div class="shop_item" id="2">
+                <div class="image"></div>
+                <p id="title">Назва товару</p>
+                <div class="description">
+                    <p id="price">250 грн</p>
+                    <button>В корзину</button>
+                </div>
+            </div>
+            <div class="shop_item" id="3">
+                <div class="image"></div>
+                <p id="title">Назва товару</p>
+                <div class="description">
+                    <p id="price">250 грн</p>
+                    <button>В корзину</button>
+                </div>
+            </div>
+            <div class="shop_item" id="4">
+                <div class="image"></div>
+                <p id="title">Назва товару</p>
+                <div class="description">
+                    <p id="price">250 грн</p>
+                    <button>В корзину</button>
+                </div>
+            </div>
+            <div class="shop_item" id="5">
+                <div class="image"></div>
+                <p id="title">Назва товару</p>
+                <div class="description">
+                    <p id="price">250 грн</p>
+                    <button>В корзину</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="basket">
+            <div class="bt">
+                <p>Кошик</p>
+                <div class="bt_table">
+                    <div class="hr"></div>
+                    <span>Наразi ваш кошик порожнiй</span>
+                    <div class="hr"></div>
+                <p class="sum">0 грн</p>
+                <button>Замовити</button>
+            </div>
+        </div>
+
+    </section>
+
+    <script src="./app.js"></script>
+    <script>
+        let s = new Shop('.shop', '.basket');
+        s.init();
+    </script>
+</body>
+</html>

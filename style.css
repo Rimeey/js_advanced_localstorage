@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F5F5F5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    display: flex;
+    gap: 40px;
+    padding: 30px 120px;
+}
+
+p {
+    color: #222;
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.shop {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    max-height: 443px;
+}
+
+.shop_item {
+    max-width: 250px;
+    border-radius: 20px;
+    border: 1px solid #E4E4E4;
+    background-color: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 7.5px;
+}
+
+.shop_item .image {
+    width: 130px;
+    height: 195px;
+    margin: 30px 0px;
+}
+
+#title {
+    margin: 15px 0px;
+    font-size: 18px;
+    text-align: justify;
+    min-height: 66px;
+}
+
+.shop_item .description {
+    display: flex;
+    align-items: end;
+    padding: 20px;
+    gap: 12px;
+}
+
+.shop_item .description p {
+    font-size: 20px;
+}
+
+.shop_item .description button,
+.bt button {
+    border-radius: 5px;
+    border: none;
+    background-color: #F9B300;
+    color: #FFF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 8px 30px;
+}
+
+.bt {
+    border-radius: 20px;
+    border: 1px solid #E4E4E4;
+    background-color: #FFF;
+    padding: 40px 20px;
+}
+
+.bt p:first-child {
+    text-align: center;
+}
+
+.bt_table {
+    padding: 25px 0px;
+}
+
+.bt_table span {
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    margin: 20px 0px;
+}
+
+.bt_item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.bt_item .image {
+    width: 60px;
+    height: 70px;
+    margin: 0px 11px;
+}
+
+.bt_item .ellipse {
+    font-size: 14px;
+    width: 30px;
+    height: 20px;
+}
+
+.bt_item .description p,
+.bt_item p {
+    color: #222;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    max-width: 250px;
+    text-align: left;
+}
+
+.bt_item .description p:nth-child(2),
+.bt_item p {
+    font-weight: 500;
+    margin: 0 11px;
+}
+
+.ellipse {
+    width: 30px;
+    height: 20px;
+    background-color: #000;
+    border-radius: 50%;
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    cursor: pointer;
+}
+
+.hr {
+    width: inherit;
+    height: 1px;
+    background-color: #D9D9D9;
+    margin: 10px 0px;
+}
+
+.bt_item .counter {
+    display: flex;
+}
+
+.bt_item .counter .count {
+    width: 30px;
+    height: 20px;
+    background-color: #D9D9D9;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    margin: 0 10px;
+}
+
+.bt_item .counter .ellipse {
+    width: 21px;
+    height: 21px;
+    font-size: 16px;
+    background-color: #F9B300;
+}
+
+.bt_item .counter .ellipse:first-child {
+    color: #000;
+}
+
+.bt .sum {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.bt button {
+    margin-top: 50px;
+    width: 100%;
+}
+
+@media screen and (max-width: 1100px) {
+    section {
+        display: grid;
+    }
+
+    .bt_item .description p:nth-child(2),
+    .bt_item p {
+        margin: 0 100px;
+    }
+}
