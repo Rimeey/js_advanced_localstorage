@@ -8,15 +8,13 @@
 
 body {
     background-color: #F5F5F5;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 section {
     display: flex;
+    justify-content: center;
     gap: 40px;
-    padding: 30px 120px;
+    margin: 2% 10%;
 }
 
 p {
@@ -30,12 +28,14 @@ p {
 .shop {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
     gap: 20px;
-    max-height: 443px;
+    max-height: 900px;
 }
 
 .shop_item {
     max-width: 250px;
+    max-height: 440px;
     border-radius: 20px;
     border: 1px solid #E4E4E4;
     background-color: #FFF;
@@ -61,7 +61,7 @@ p {
 .shop_item .description {
     display: flex;
     align-items: end;
-    padding: 20px;
+    padding: 10px;
     gap: 12px;
 }
 
@@ -87,6 +87,7 @@ p {
     border: 1px solid #E4E4E4;
     background-color: #FFF;
     padding: 40px 20px;
+    max-width: 500px;
 }
 
 .bt p:first-child {
@@ -193,13 +194,14 @@ p {
     width: 100%;
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1360px) {
     section {
         display: grid;
+        grid-template-columns: 1fr;
     }
 
     .bt_item .description p:nth-child(2),
     .bt_item p {
-        margin: 0 100px;
+        margin: 0;
     }
 }
